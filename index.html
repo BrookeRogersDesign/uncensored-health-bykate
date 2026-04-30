@@ -164,9 +164,11 @@
       gap: 40px; align-items: center;
     }
     .about-photo {
-      position: relative; aspect-ratio: 3/4;
-      background: url('BIO.png') center/cover no-repeat;
-      border-radius: 0; overflow: hidden;
+      position: relative; aspect-ratio: auto;
+      border-radius: 28px; overflow: hidden;
+    }
+    .about-photo img {
+      width: 100%; height: auto; display: block;
     }
     .about-photo-overlay {
       position: absolute; bottom: 20px; left: 20px; z-index: 2;
@@ -174,11 +176,6 @@
       font-weight: 800; font-size: clamp(1.3rem, 2.5vw, 1.8rem);
       line-height: 1.05; text-transform: uppercase;
       font-style: italic; color: var(--white);
-    }
-    .about-photo::before {
-      content: ''; position: absolute; inset: 0;
-      background: linear-gradient(180deg, transparent 50%, rgba(10,10,10,0.75) 100%);
-      z-index: 1;
     }
     .about-photo-placeholder {
       position: absolute; top: 45%; left: 50%; transform: translate(-50%,-50%);
@@ -443,6 +440,7 @@
     <div class="section-inner">
       <div class="about-grid">
         <div class="about-photo fade-up">
+          <img src="BIO.png" alt="Kate — The face behind the tough love" />
         </div>
         <div class="about-content fade-up">
           <div class="about-pill">The Hard Truth</div>
