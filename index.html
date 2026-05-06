@@ -145,13 +145,13 @@
     }
     .services-grid {
       display: grid; grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
+      gap: 16px; max-width: 100%;
     }
     .service-card {
       background: var(--dark-card);
       border: 1px solid rgba(255,255,255,0.08);
       border-radius: 0 30px 30px 30px;
-      padding: 32px 20px;
+      padding: 36px 24px;
       transition: all 0.4s ease;
       display: flex; flex-direction: column; align-items: center; justify-content: center;
       text-align: center;
@@ -170,8 +170,8 @@
     }
     .service-card p {
       font-family: 'Inter', sans-serif;
-      font-weight: 400; font-size: clamp(0.7rem, 1vw, 0.85rem);
-      line-height: 1.6; color: rgba(255,255,255,0.9);
+      font-weight: 400; font-size: clamp(0.8rem, 1.1vw, 0.95rem);
+      line-height: 1.65; color: rgba(255,255,255,0.95);
       margin: 0 auto;
     }
 
@@ -434,7 +434,7 @@
 
   <!-- FIND YOUR LIMITS / SERVICES -->
   <section class="section" id="services">
-    <div class="section-inner">
+    <div class="section-inner" style="max-width: 1320px;">
       <div class="services-header fade-up">
         <p class="services-label">The Mission</p>
         <h2 class="services-heading">You know what to do. I'll make you actually do it.</h2>
