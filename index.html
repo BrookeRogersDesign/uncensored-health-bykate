@@ -144,18 +144,18 @@
       max-width: 500px; margin: 0 auto;
     }
     .services-grid {
-      display: grid; grid-template-columns: repeat(2, 1fr);
+      display: grid; grid-template-columns: repeat(4, 1fr);
       gap: 14px;
     }
     .service-card {
       background: var(--dark-card);
       border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 0 50px 50px 50px;
-      padding: 40px 32px;
+      border-radius: 0 30px 30px 30px;
+      padding: 32px 20px;
       transition: all 0.4s ease;
       display: flex; flex-direction: column; align-items: center; justify-content: center;
       text-align: center;
-      aspect-ratio: 1; width: 100%; max-width: 566px;
+      aspect-ratio: 1; width: 100%;
     }
     .service-card:hover {
       border-color: rgba(154,255,141,0.25);
@@ -164,15 +164,15 @@
     }
     .service-card h3 {
       font-family: 'Inter', sans-serif;
-      font-weight: 700; font-size: clamp(2.5rem, 5vw, 3.5rem);
-      line-height: 1.1; margin-bottom: 16px;
+      font-weight: 700; font-size: clamp(1.4rem, 2.2vw, 2rem);
+      line-height: 1.1; margin-bottom: 12px;
       text-transform: uppercase; letter-spacing: 0.02em;
     }
     .service-card p {
       font-family: 'Inter', sans-serif;
-      font-weight: 400; font-size: 1rem;
+      font-weight: 400; font-size: clamp(0.7rem, 1vw, 0.85rem);
       line-height: 1.6; color: rgba(255,255,255,0.9);
-      max-width: 380px; margin: 0 auto;
+      margin: 0 auto;
     }
 
     /* ── THE HARD TRUTH / ABOUT (version 1 — photo left, text right) ── */
@@ -385,7 +385,7 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 680px) {
-      .services-grid { grid-template-columns: 1fr; gap: 10px; }
+      .services-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
       .about-grid, .about2-grid { grid-template-columns: 1fr; gap: 28px; }
       .gallery { grid-template-columns: repeat(2, 1fr); }
       .section { padding: 56px 18px; }
@@ -498,9 +498,9 @@
           <p class="about2-body" style="color:var(--white); font-weight:500;">Here, you'll get honest feedback, high-touch support, and coaching designed for long-term results — not quick fixes.</p>
           <p style="margin-top:14px;"><a href="#" class="about2-link">Schedule A Call Now</a></p>
           <div class="about2-pills">
-            <span class="pill-outline active">The Hard Truth</span>
-            <span class="pill-outline">Dedication</span>
-            <span class="pill-outline">motivation</span>
+            <span class="pill-outline active">Radical Honesty</span>
+            <span class="pill-outline">Results Earned Daily</span>
+            <span class="pill-outline">Commitment</span>
           </div>
         </div>
         <div class="about2-photo">
