@@ -144,16 +144,16 @@
       max-width: 500px; margin: 0 auto;
     }
     .services-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr);
+      display: grid; grid-template-columns: repeat(2, 1fr);
       gap: 14px;
     }
     .service-card {
       background: var(--dark-card);
       border: 1px solid rgba(255,255,255,0.08);
       border-radius: 0 50px 50px 50px;
-      padding: 40px 24px;
+      padding: 40px 32px;
       transition: all 0.4s ease;
-      display: flex; align-items: center; justify-content: center;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
       text-align: center;
       aspect-ratio: 1; width: 100%; max-width: 566px;
     }
@@ -164,8 +164,15 @@
     }
     .service-card h3 {
       font-family: 'Inter', sans-serif;
-      font-weight: 600; font-size: 2.19rem;
-      line-height: 1.15; margin-bottom: 0;
+      font-weight: 700; font-size: clamp(2.5rem, 5vw, 3.5rem);
+      line-height: 1.1; margin-bottom: 16px;
+      text-transform: uppercase; letter-spacing: 0.02em;
+    }
+    .service-card p {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400; font-size: 1rem;
+      line-height: 1.6; color: rgba(255,255,255,0.9);
+      max-width: 380px; margin: 0 auto;
     }
 
     /* ── THE HARD TRUTH / ABOUT (version 1 — photo left, text right) ── */
@@ -413,8 +420,10 @@
   <!-- HERO TEXT (below image on dark bg) -->
   <div class="hero-text fade-up">
     <p class="hero-label">Your no-BS coach is here</p>
-    <h1 class="hero-heading"><span style="white-space:nowrap;">Built For The One</span> <span style="white-space:nowrap;">That Doesn't Half-Ass It</span></h1>
-    <p class="hero-sub">Built around your goals, your schedule, your equipment, and your body. Updated as you progress — not recycled from someone else's plan.</p>
+    <h1 class="hero-heading">Build A Body You Love Without Sacrificing Your Social Life.</h1>
+    <p class="hero-sub">My one-on-one coaching is built on continuous accountability. You'll complete a daily check-in form, and I respond to it every single day. That means you hear from me, not an assistant or AI, every. single. day.</p>
+    <p class="hero-sub">Each week, we'll do a video call to review your progress, adjust your plan, and map out the next week so you're not guessing what to do.</p>
+    <p class="hero-sub">This is month-to-month, no long-term contract. Cancel anytime. I don't want you here unless you're all-in. If you're not fully committed to the process, this won't work, and I'm not interested in pretending it will. Monthly reinvestment forces honesty on both sides: you stay because it's working, and I keep earning it.</p>
     <a href="#" class="hero-cta">GET STARTED</a>
   </div>
 
@@ -427,19 +436,28 @@
   <section class="section" id="services">
     <div class="section-inner">
       <div class="services-header fade-up">
-        <p class="services-label">Find Your Limits</p>
-        <h2 class="services-heading">The standard you said you wanted</h2>
-        <p class="services-sub">Built around your goals, your schedule, your equipment, and your body. Updated as you progress — not recycled from someone else's plan.</p>
+        <p class="services-label">The Mission</p>
+        <h2 class="services-heading">You know what to do. I'll make you actually do it.</h2>
+        <p class="services-sub">Living a healthy, happy life isn't that fucking complicated. You already know what works: eat real food, move your body, stay connected to people.</p>
+        <p class="services-sub">The problem isn't a lack of information. It's that you've been pulled away from the basics by fads, shortcuts, and noise.</p>
+        <p class="services-sub">My job is to bring you back to what actually works. No bullshit. No overcomplication. Just the truth, plus the systems and accountability to make it stick.</p>
       </div>
       <div class="services-grid">
         <div class="service-card fade-up">
-          <h3>Custom Training Programs</h3>
+          <h3>Fusion</h3>
+          <p>A hybrid training program that blends strength, conditioning, and mobility into one seamless system — built for the person who wants it all without the fluff.</p>
         </div>
         <div class="service-card fade-up">
-          <h3>Nutrition Coaching That Actually Fits Your Life</h3>
+          <h3>Fuel</h3>
+          <p>Nutrition coaching that cuts through the noise. Real food, real strategy, no restriction — just a sustainable approach that fits your actual life.</p>
         </div>
         <div class="service-card fade-up">
-          <h3>Accountability That Doesn't Let You Hide</h3>
+          <h3>Form</h3>
+          <p>Personalized training programs designed around your body, your goals, and your schedule. No cookie-cutter plans — just smart programming that works.</p>
+        </div>
+        <div class="service-card fade-up">
+          <h3>Foundation</h3>
+          <p>The full package. Training, nutrition, accountability, and mindset — everything you need to build a lifestyle that actually lasts.</p>
         </div>
       </div>
     </div>
@@ -476,11 +494,10 @@
     <div class="section-inner">
       <div class="about2-grid">
         <div class="about2-content fade-up">
-          <h2 class="about2-heading">The One Who'll<br>Actually Call You Out</h2>
-          <p class="about2-body">I'm Kate. I build custom programs, run nutrition that fits your real life, and hold you to the standard you said you wanted. If you're looking for someone to coddle you, wrong tab. If you're looking for someone to actually get you there.</p>
-          <p class="about2-body">I'm not going to sugarcoat your check-ins. I'm not going to pretend three skipped workouts is fine when it isn't. And I'm definitely not selling you a detox tea or GLP's.</p>
-          <p class="about2-body">What I will do is meet you where you are, build something that actually fits, and push you to a standard you'll be proud of.</p>
-          <p class="about2-body" style="color:var(--white); font-weight:500;">This works if you show up. Simple as that.</p>
+          <h2 class="about2-heading">Values Rooted in Truth,<br>Intention, and Accountability</h2>
+          <p class="about2-body">This coaching is built on radical honesty, evidence-based methods, and a deep respect for the work it takes to create real change. Every plan is intentional, personalized, and grounded in science — not trends, templates, or shortcuts.</p>
+          <p class="about2-body">I believe accountability is what turns effort into progress, and integrity is non-negotiable in every recommendation, partnership, and conversation.</p>
+          <p class="about2-body" style="color:var(--white); font-weight:500;">Here, you'll get honest feedback, high-touch support, and coaching designed for long-term results — not quick fixes.</p>
           <p style="margin-top:14px;"><a href="#" class="about2-link">Schedule A Call Now</a></p>
           <div class="about2-pills">
             <span class="pill-outline active">The Hard Truth</span>
